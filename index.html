@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Sholat Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🕋 Jadwal Sholat Harian</h1>
+        
+        <div class="input-section">
+            <label for="city-input">Masukkan Nama Kota (misal: Jakarta):</label>
+            <input type="text" id="city-input" placeholder="Contoh: Bandung, Surabaya">
+            <button id="search-button">Cari Jadwal</button>
+        </div>
+
+        <div id="loading-message" class="hidden">
+            <p>Memuat data...</p>
+        </div>
+
+        <div id="prayer-schedule" class="schedule-box hidden">
+            <h2 id="schedule-city"></h2>
+            <p id="schedule-date"></p>
+            
+            <div id="schedule-list">
+                </div>
+
+            <p class="source-info">Data diambil dari API Jadwal Sholat</p>
+        </div>
+        
+        <div id="error-message" class="error-message hidden">
+            </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
