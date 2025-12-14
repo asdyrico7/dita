@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #008080; /* Warna Hijau Kebiruan */
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #006666;
+}
+
+.schedule-box {
+    text-align: left;
+    border: 2px solid #e0f2f1;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f7fdfd;
+}
+
+#schedule-city {
+    color: #333;
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+}
+
+#schedule-date {
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.prayer-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 1.1em;
+}
+
+.prayer-time:last-child {
+    border-bottom: none;
+}
+
+.time {
+    font-weight: bold;
+    color: #008080;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.error-message {
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.source-info {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 15px;
+    text-align: center;
+}
